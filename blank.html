@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+    <meta charset="utf-8">
+    <title>Nerds</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylemin.css">
+		<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="favicon/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-navigation">
+      <a href="index.html" class="page-header-logo"><img src="img/nerds-logo.svg" alt="logo"></a>
+      <ul class="navigation-list">
+        <li class="navigation-list_item"><a href="index.html">Студия</a></li>
+        <li class="navigation-list_item current-list_item"><a>Клиенты</a></li>
+        <li class="navigation-list_item"><a href="catalog.html">Магазин</a></li>
+        <li class="navigation-list_item current-list_item"><a>Контакты</a></li>
+      </ul>
+      <a class="cart-link current-list_item">Корзина</a>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="blank-title">
+      <h1>Заголовок страницы</h1>
+    </div>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="yandex-map" style="overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/?from=tabbar&ll=30.317359%2C59.968322&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=16.64" style="color:#eee;font-size:12px;position:absolute;top:14px;">Набережная реки Карповки, 5П — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUJEFXWwD" width="100%" height="416" frameborder="0" allowfullscreen="true" style="position:relative; z-index: 2;"></iframe></div>
+      <div class="contacts-map">
+        <div class="contact-us">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <a href="tel:+7-800-555-86-28" class="contact-phone">+7 800 555-86-28</a>
+          <a id="contact-us-open-popup" class="button contact-us-button">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer-wrapper">
+      <h2 class="visually-hidden">Наши соцсети</h2>
+      <div class="socials">
+        <a class="button socials-button" href="https://vk.com" target="_blank">
+          <img src="img/icon/vk.svg" alt="Vkontakte">
+        </a>
+        <a class="button socials-button" href="https://facebook.com" target="_blank">
+          <img src="img/icon/fb.svg" alt="Face Book">
+        </a>
+        <a class="button socials-button" href="https://instagram.com" target="_blank">
+          <img src="img/icon/insta.svg" alt="Instagram">
+        </a>
+      </div>
+      <div class="footer-text">
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <div id="popup" class="popup">
+    <h2>Напишите нам</h2>
+    <button type="button" id="popup-close-button" class="popup-close-button" aria-label="Закрыть"></button>
+    <form action="https://echo.htmlacademy.ru" method="post" class="popup-form">
+      <div class="popup-name">
+        <label for="name">Ваше имя:</label>
+        <input class="popup-input" type="text" name="name" placeholder="Имя Фамилия" id="name">
+      </div>
+      <div class="popup-email">
+        <label for="email">Ваш email:</label>
+        <input class="popup-input" type="email" name="email" id="email" placeholder="email@example.com ">
+      </div>
+      <div class="popup-textarea">
+        <label for="text">Текст письма:</label>
+        <textarea class="popup-text" placeholder="В свободной форме" name="textarea" id="text" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" class="button popup-button" >Отправить</button>
+    </form>
+  </div>
+  <script src="js/mainmin.js"></script>
+</body>
+</html>
